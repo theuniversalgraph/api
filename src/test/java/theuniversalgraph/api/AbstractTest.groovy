@@ -12,5 +12,6 @@ import theuniversalgraph.api.rest.RestApplication
 @IntegrationTest
     abstract class AbstractTest extends Specification {
 
-    public static final String API_VERSION = "/v1/";
+    public static final String API_VERSION = "/api/v1/";
+    public static final String NODE_ENDPOINT = "nodes/";
 }

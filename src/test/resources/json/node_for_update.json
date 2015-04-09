@@ -1,11 +1,16 @@
 {
   "contenttype": "",
+  "childlen": [{
+    "id": "first id",
+    "contenttype": "",
+    "content": ""
+  }],
   "x": 0,
   "y": 0,
   "width": 0,
   "height": 0,
   "id": "",
-  "content": "",
+  "content": "updated node",
   "parents": [{
     "id": "first id",
     "contenttype": "",
@@ -14,6 +19,7 @@
   ],
   "contentType": "",
   "children": [{
+    "id": "second id",
     "contenttype": "",
     "content": ""
   }

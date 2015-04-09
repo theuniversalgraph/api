@@ -1,18 +1,17 @@
 package theuniversalgraph.api.rest.api;
 
 import com.wordnik.swagger.annotations.Api;
-import enclosing.application.node.Node;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import theuniversalgraph.api.rest.entity.NodeEntity;
+import theuniversalgraph.api.rest.dto.NodeDto;
 import theuniversalgraph.api.rest.service.NodeService;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/api/v1/nodes")
 @Api(value = "Node API")
 public class NodeResource {
 
@@ -20,18 +19,18 @@ public class NodeResource {
     private NodeService nodeService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<NodeEntity> getAllNodes() {
+    public List<NodeDto> getAllNodes() {
         return nodeService.getAllNodes();
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Node getNode(@PathVariable final String id) {
+    public NodeDto getNode(@PathVariable final String id) {
         return nodeService.getNode(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<NodeEntity> addNode(@RequestBody final NodeEntity node) {
-        NodeEntity createdNode = nodeService.createNode(node);
+    public ResponseEntity<NodeDto> addNode(@RequestBody final NodeDto node) {
+        NodeDto createdNode = nodeService.createNode(node);
         return new ResponseEntity<>(createdNode, HttpStatus.CREATED);
     }
 
@@ -42,10 +41,12 @@ public class NodeResource {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PATCH)
-    public ResponseEntity<NodeEntity> updateNode(@PathVariable final String id, @RequestBody final NodeEntity node) {
-        NodeEntity createdNode = nodeService.updateNode(id, node);
+    public ResponseEntity<NodeDto> updateNode(@PathVariable final String id, @RequestBody final NodeDto node) {
+        NodeDto createdNode = nodeService.updateNode(id, node);
         return new ResponseEntity<>(createdNode, HttpStatus.OK);
     }
+
+
 
 }
 
