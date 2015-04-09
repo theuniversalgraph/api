@@ -1,4 +1,4 @@
-package theuniversalgraph.api
+package groovy.theuniversalgraph.api
 
 import org.springframework.boot.test.IntegrationTest
 import org.springframework.boot.test.SpringApplicationContextLoader

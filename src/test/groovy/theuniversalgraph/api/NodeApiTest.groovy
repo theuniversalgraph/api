@@ -1,7 +1,8 @@
-package theuniversalgraph.api
+package groovy.theuniversalgraph.api
+
 import groovy.json.JsonSlurper
 import spock.lang.Shared
-import theuniversalgraph.utils.TestUtils
+import groovy.theuniversalgraph.utils.TestUtils
 
 import static com.jayway.restassured.RestAssured.*
 import static com.jayway.restassured.http.ContentType.JSON
