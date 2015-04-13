@@ -7,7 +7,7 @@
 		spring.datasource.username={USERNAME}
 		spring.datasource.password={PASSWORD}
 6. Run terminal in project folder and then use following commands:
-		Use gradle to compile sources: 
+		Use gradle to compile sources:
 			$ gradle clean build (https://gradle.org)
 		Gradle command to run application:
 			$ gradle bootRun
