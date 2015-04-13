@@ -1,7 +1,7 @@
 package theuniversalgraph.api.rest.entity;
 
 
-import enclosing.application.node.Node;
+import core.model.Node;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
