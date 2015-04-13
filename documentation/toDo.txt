@@ -1,0 +1,17 @@
+To do.
+
+1. Download and install JDK 1.8: http://www.oracle.com/technetwork/indexes/downloads/index.html
+2. Download and install Gradle 2.3: https://gradle.org/downloads/
+3. Download and install MySql database: http://www.mysql.com/downloads/
+4. Run MySql server and create new Database with name "ap"
+5. Open config/application.properties and set properties:
+		spring.datasource.url=jdbc:mysql://localhost:{MySQLServerPort}/ap?charSet=UTF8
+		spring.datasource.username={USERNAME}
+		spring.datasource.password={PASSWORD}
+6. Run terminal in project folder and then use following commands:
+		Use gradle to compile sources: 
+			$ gradle clean build (https://gradle.org)
+		Gradle command to run application:
+			$ gradle bootRun
+		Gradle command to run tests:
+			$ gradle test
