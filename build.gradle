@@ -36,7 +36,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
-    compile 'postgresql:postgresql:9.1-901-1.jdbc4'
+    compile 'mysql:mysql-connector-java:5.1.11'
 
     //For test purposes.
     compile 'com.h2database:h2:1.4.186'
