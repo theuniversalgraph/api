@@ -1,9 +1,9 @@
 JDK version: 1.8
 Apllication work with PostgreSQL 9.1 database (will migrate to MySQL):
-	scheme: ap; 
-	username: postgres; 
-	password postgres; 
-	port:5432.
+	scheme: theniversalgraph; 
+	username: theniversalgraph; 
+	password theniversalgraph; 
+	port:3306.
 Use gradle to compile sources: 
 	$ gradle clean build (https://gradle.org)
 Gradle command to run application:
@@ -19,3 +19,6 @@ Currently implemented REST API:
 	getNode (GET /api/v1/nodes/{id})
 	deleteNode (DELETE /api/v1/nodes/{id})
 	updateNode (PATCH GET /api/v1/nodes/{id})
+	
+	
+	
